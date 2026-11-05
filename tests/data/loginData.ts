@@ -8,10 +8,12 @@ export const wrongPasswordUser = {
 export const messages = {
   invalidCredentials: 'Invalid credentials',
   loginToast: 'Login successful! Redirecting...',
+  logoutToast: 'Logged out successfully',
   greeting: 'Hi, Demo User',
 };
 
 export const routes = {
   login: '/login.html',
   home: '/',
+  currentUserApi: '/api/user',
 };
