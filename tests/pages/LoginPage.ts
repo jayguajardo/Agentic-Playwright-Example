@@ -29,4 +29,9 @@ export class LoginPage {
   async getStoredUser() {
     return this.page.evaluate(() => localStorage.getItem('user'));
   }
+
+  async getStoredUserParsed() {
+    const raw = await this.getStoredUser();
+    return raw === null ? null : JSON.parse(raw);
+  }
 }

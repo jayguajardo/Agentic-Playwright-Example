@@ -25,4 +25,8 @@ export class HomePage {
   async logout() {
     await this.logoutButton.click();
   }
+
+  async getCurrentUserResponse() {
+    return this.page.request.get(routes.currentUserApi);
+  }
 }
