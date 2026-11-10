@@ -4,15 +4,21 @@ export class CartPage {
   readonly heading: Locator;
   readonly items: Locator;
   readonly total: Locator;
+  readonly checkoutLink: Locator;
 
   constructor(private readonly page: Page) {
     this.heading = page.getByRole('heading', { name: 'Your Shopping Cart' });
     this.items = page.locator('.cart-item');
     this.total = page.locator('#total');
+    this.checkoutLink = page.getByRole('link', { name: 'Proceed to Checkout' });
   }
 
   async goto() {
     await this.page.goto('/cart.html');
+  }
+
+  async proceedToCheckout() {
+    await this.checkoutLink.click();
   }
 
   itemByName(name: string): Locator {
