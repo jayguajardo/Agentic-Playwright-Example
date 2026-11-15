@@ -5,6 +5,11 @@ export const wrongPasswordUser = {
   password: 'wrongpass',
 };
 
+export const unknownEmailUser = {
+  email: 'nobody@techmart.com',
+  password: 'demo123',
+};
+
 export const messages = {
   invalidCredentials: 'Invalid credentials',
   loginToast: 'Login successful! Redirecting...',
