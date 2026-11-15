@@ -1,6 +1,6 @@
 # Agentic Playwright Example
 
-Sample project showing Playwright tests planned and generated with Claude Code agents (planner / generator / healer), using the Page Object Model to keep locators and test data out of the specs.
+Sample project showing Playwright tests planned and generated with Claude Code and Playwright agents (planner / generator / healer), using the Page Object Model to keep locators and test data out of the specs.
 
 The app under test is the TechMart sample site (served on `http://localhost:3000`). The demo credentials (`demo@techmart.com` / `demo123`) are public sample data.
 
